@@ -6,7 +6,7 @@ The https://hub.docker.com/_/neo4j/[official Neo4j docker image] does not suppor
 
 Using env variable `NEO4J_INITIAL_CYPHER_URL` you can supply a URL that is loaded via https://curl.haxx.se/[cURL] and the URL's content get applied to Neo4j using https://neo4j.com/docs/operations-manual/current/tools/cypher-shell/[`cypher-shell`] *before* the server is started.
 
-	docker run --rm -e NEO4J_AUTH=neo4j/123 -e NEO4J_INITIAL_CYPHER_URL="https://docs.google.com/a/neotechnology.com/document/export?format=txt&id=1950KfQFbJ5RQ7obhIjxcUfNBrLM2u2FsWAOiNBZ0RXM&token=AC4w5VivcnYhmSrR03m68YSE87fPG8oMYA%3A1485261691857" -p 7474:7474 -p 7687:7687 neo4j-prepopulation
+	docker run --rm -e NEO4J_AUTH=neo4j/123 -e NEO4J_INITIAL_CYPHER_URL="https://docs.google.com/a/neotechnology.com/document/export?format=txt&id=1950KfQFbJ5RQ7obhIjxcUfNBrLM2u2FsWAOiNBZ0RXM&token=AC4w5VivcnYhmSrR03m68YSE87fPG8oMYA%3A1485261691857" -p 7474:7474 -p 7687:7687 sarmbruster/neo4j-prepopulation:latest
 
 some hints:
 
